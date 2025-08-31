@@ -27,7 +27,6 @@ const SavedJobsPage: React.FC<Props> = ({ isPreview, onOpen, onBack }) => {
         </button>
       )}
 
-      {/* Always render header */}
       <h2 className="text-lg font-semibold mb-3">Saved Jobs</h2>
 
       {state.savedJobs.length === 0 ? (
@@ -58,7 +57,6 @@ const SavedJobsPage: React.FC<Props> = ({ isPreview, onOpen, onBack }) => {
         </div>
       )}
 
-      {/* Show "View all" only in preview mode */}
       {isPreview && state.savedJobs.length > 0 && onOpen && (
         <button
           onClick={onOpen}
